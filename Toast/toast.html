@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Toast</title>
+		<link rel="stylesheet" href="./slyle.css" />
+	</head>
+	<body>
+		<div class="toast-button">
+			<button type="button" class="btn-toast">Show toast</button>
+		</div>
+
+		<div class="toast-message">
+			<div class="toast">
+				<div class="toast-header">
+					<strong class="me-auto">Bootstrap</strong>
+					<div class="toast-header-right">
+						<small>11 mins ago </small>
+						<button type="button" class="btn-close">
+							<img src="./close.svg" alt="" />
+						</button>
+					</div>
+				</div>
+				<div class="toast-body">Hello, world! This is a toast message.</div>
+			</div>
+		</div>
+
+		<script>
+			const btnToast = document.querySelector(".btn-toast");
+			const toastMessage = document.querySelector(".toast-message");
+			const btnClose = document.querySelector(".btn-close");
+
+			btnClose.addEventListener("click", function () {
+				toastMessage.classList.remove("show");
+			});
+
+			btnToast.addEventListener("click", function (e) {
+				toastMessage.classList.add("show");
+
+				setTimeout(function () {
+					toastMessage.classList.remove("show");
+				}, 2000);
+			});
+		</script>
+	</body>
+</html>

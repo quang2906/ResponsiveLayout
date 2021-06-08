@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            type="button"
+            data-target="#home"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            type="button"
+            data-target="#profile"
+          >
+            Profile
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            type="button"
+            data-target="#contact"
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+      <div class="line"></div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show" id="home" role="tabpanel">
+          <strong>Home</strong> Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Consequuntur culpa dolores debitis. Libero sunt
+          magni ipsa nam. Vel quis nobis iusto magnam doloribus dolorum ullam
+          sed, iste soluta nulla exercitationem? <strong>Home</strong> Lorem
+          ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur culpa
+          dolores debitis. Libero sunt magni ipsa nam. Vel quis nobis iusto
+          magnam doloribus dolorum ullam sed, iste soluta nulla exercitationem?
+          <strong>Home</strong> Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Consequuntur culpa dolores debitis. Libero sunt
+          magni ipsa nam. Vel quis nobis iusto magnam doloribus dolorum ullam
+          sed, iste soluta nulla exercitationem?
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel">
+          <strong>Profile</strong> Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Necessitatibus pariatur aut cupiditate a ex delectus
+          hic, voluptate qui culpa quisquam voluptates expedita! Dicta vitae
+          quae ab possimus ea culpa vero?
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel">
+          <strong>Contact</strong> Contact Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Beatae quia error, mollitia vitae
+          similique exercitationem sunt maiores explicabo voluptates hic,
+          excepturi deleniti numquam tempora nobis qui eius, accusantium
+          perspiciatis aut.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
